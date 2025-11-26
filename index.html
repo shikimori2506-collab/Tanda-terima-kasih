@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Halaman Lucu Imut</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Animasi karakter imut */
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-animation {
+            animation: float 2.5s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-pink-100 min-h-screen flex flex-col items-center justify-center">
+
+    <!-- Karakter Imut -->
+    <div class="float-animation mb-10">
+        <img src="https://www.gambaranimasi.org/data/media/492/animasi-bergerak-kembang-api-0003.gif" 
+             alt="cute character"
+             class="w-40 h-40 mx-auto drop-shadow-xl">
+    </div>
+
+    <!-- Tombol -->
+    <button onclick="goNext()" 
+            class="bg-pink-500 text-white px-8 py-4 rounded-full text-xl font-semibold shadow-lg hover:bg-pink-600 transition">
+        Tekan Aku! ❤️
+    </button>
+
+    <script>
+        function goNext() {
+            window.location.href = "thankyou.html";
+        }
+    </script>
+</body>
+</html>
